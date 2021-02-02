@@ -24,6 +24,7 @@ function Signup(props){
 			if(same.length===0){
 				auth = [...auth,{'username':username,'password':password1}];
 				localStorage.setItem('auth',JSON.stringify(auth));
+				localStorage.setItem('userlogined',username);
 				setUsername('');
 				setPassword1('');
 				setPassword2('');
